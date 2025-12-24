@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-left: 10px;
+      color: white;
+    }
+
+    .hero {
+      background: url('Images/i1.jpg') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #Hero:hover{
+      background: white;
+      border-radius: 25px;
+      color: black;
+    }
+
+    .feature-icon {
+      font-size: 40px;
+      color: lightgray;
+    }
+
+    footer {
+      background-color: #212529;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .container {
+      transition: transform 2s ease-in-out;
+    }
+
+    .container:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar .btn {
+      color: white;
+      background-color: transparent;
+      border: none;
+    }
+    
+
+    .navbar .btn:hover,
+    .navbar .btn:focus {
+      background-color: whitesmoke;
+      color: black;
+      border-radius: 25px;
+    }
+
+    .dropdown-menu {
+      background-color: white;
+      color: black;
+    }
+
+    .dropdown-item:hover {
+      background-color: #f1f1f1;
+    }
+    .container-fluid{
+      background: black;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid">
+      <h1><b><i>TravelX</i></b></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="btn" href="about.html">About</a></li>
+          <li class="nav-item"><a class="btn" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="btn" href="Dashboard.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Explore the World with TravelX</h1>
+      <p class="lead">Your next adventure begins here. Discover new places, meet new people, and create lifelong memories.</p>
+      <a href="LoginSignUpPage.html" class="btn btn-secondary" id="Hero">Get Started</a>
+    </div>
+  </section>
+
+  
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="Images/bg9.jpeg" class="mb-3" width="80" alt="Worldwide Travel">
+          <h5>Worldwide Travel</h5>
+          <p><i>Book trips to the most exotic destinations across the globe with ease.</i></p>
+        </div>
+        <div class="col-md-4">
+          <img src="Images/bg16.avif" class="mb-3" width="80" alt="Affordable Pricing">
+          <h5>Affordable Pricing</h5>
+          <p><i>Discover deals that suit every budget – from backpackers to luxury travelers.</i></p>
+        </div>
+        <div class="col-md-4">
+          <img src="Images/bg13.avif" class="mb-3" width="80" alt="Secure Booking">
+          <h5>Secure Booking</h5>
+          <p><i>Travel worry-free with our trusted partners and secure transactions.</i></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TravelX. All rights reserved.
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

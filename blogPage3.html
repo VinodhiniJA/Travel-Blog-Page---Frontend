@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goa Travel Details</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: antiquewhite;
+    }
+
+    .page-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .destination-img {
+      width: 100%;
+      height: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .tags span {
+      background-color: #e0f7fa;
+      color: #00796b;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    .location {
+      font-style: italic;
+      color: #6c757d;
+      font-size: 1rem;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    img {
+      transition: transform 2s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .single-border-wrapper {
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .inner-tags-row {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid page-container">
+    <div class="single-border-wrapper">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <img src="Images/t30.jpg" alt="Goa Beach" class="destination-img">
+        </div>
+        <div class="col-md-6">
+          <h2>LK Sri Lanka</h2>
+          <p class="location">Location: South Asia, India</p>
+          <p class="description">
+            Sri Lanka is a tropical paradise famed for its stunning beaches, lush landscapes, and rich cultural heritage. Whether it’s the golden sands of Mirissa, the ancient city of Sigiriya, or the scenic train ride through Ella’s tea plantations, this island nation offers diverse experiences for every traveler.
+
+Explore sacred temples, hike misty mountains, or enjoy a thrilling safari in Yala National Park. Sri Lanka is also a culinary delight, known for flavorful curries, fresh seafood, and world-renowned Ceylon tea.
+
+From surfing in Arugam Bay to relaxing in a luxury resort in Galle, Sri Lanka blends adventure, spirituality, and serenity in perfect harmony. It’s a land where ancient traditions meet warm hospitality.
+
+Whether you're seeking nature, culture, or relaxation, Sri Lanka promises an unforgettable journey.
+          </p>
+        </div>
+      </div>
+
+      <div class="row inner-tags-row">
+        <div class="col d-flex flex-wrap justify-content-start tags">
+          <span>Beachs</span>
+          <span>Culture</span>
+          <span>Tea Plantations</span>
+          <span>Wildlife</span>
+          <span>Adventure</span>
+          <span>Temples</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

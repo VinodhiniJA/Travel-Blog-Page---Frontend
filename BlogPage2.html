@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goa Travel Details</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: antiquewhite;
+    }
+
+    .page-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .destination-img {
+      width: 100%;
+      height: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .tags span {
+      background-color: #e0f7fa;
+      color: #00796b;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin: 5px;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    .location {
+      font-style: italic;
+      color: #6c757d;
+      font-size: 1rem;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    img {
+      transition: transform 2s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .single-border-wrapper {
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .inner-tags-row {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid page-container">
+    <div class="single-border-wrapper">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <img src="Images/t16.jpg" alt="Goa Beach" class="destination-img">
+        </div>
+        <div class="col-md-6">
+          <h2>New York City</h2>
+          <p class="location">Location: New York, USA</p>
+          <p class="description">
+            New York City is a global icon known for its towering skyscrapers, vibrant culture, and endless attractions. From Times Square and Central Park to the Statue of Liberty, NYC offers something for everyone.
+
+The city blends high energy with peaceful escapes—wander through Central Park or take in the skyline from the Empire State Building. Art and culture thrive here, with world-class museums and Broadway shows.
+
+Each borough offers something unique: Brooklyn’s scenic spots, Queens’ diverse food scene, and The Bronx’s rich sports and music history. NYC’s food is legendary—grab a bagel, a slice of pizza, or dine in a Michelin-starred restaurant.
+
+Whether you're sightseeing, shopping on 5th Avenue, or exploring hidden gems, New York City leaves an unforgettable impression.
+          </p>
+        </div>
+      </div>
+
+      <div class="row inner-tags-row">
+        <div class="col d-flex flex-wrap justify-content-start tags">
+          <span>Skyscrapers</span>
+          <span>Broadway</span>
+          <span>culture</span>
+          <span>Shopping</span>
+          <span>Nightlife</span>
+          <span>Food</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
